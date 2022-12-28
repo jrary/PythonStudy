@@ -17,7 +17,6 @@ x = []
 for i in range(n):
     x.append(input())
 
-
 for i in x:
     a, b = isPalindrome(i)
     print(a, b)
