@@ -11,5 +11,4 @@ while n != res:
             break
         else:
             temp = temp//10
-
 print(i)
