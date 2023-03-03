@@ -8,7 +8,6 @@ for i in range(n):
         m += temp % 10
         temp //= 10
     if m == n:
-        print(m)
         res = i
         break
 print(res)
