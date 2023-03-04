@@ -1,4 +1,5 @@
 import sys
+
 n, k = map(int, sys.stdin.readline().split())
 coin = []
 for _ in range(n):
