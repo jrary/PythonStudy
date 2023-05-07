@@ -10,9 +10,9 @@ for _ in range(N):
     except:
         act = line
     if act == 'push_front':
-        q.extendleft(i)
+        q.appendleft(i)
     elif act == 'push_back':
-        q.extend(i)
+        q.append(i)
     elif act == 'pop_front':
         if len(q) == 0:
             print(-1)
