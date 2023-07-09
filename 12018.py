@@ -13,7 +13,6 @@ for _ in range(N):
         milage.append(36)
     else:
         milage.append(arr[L-1]+1)
-print(milage)
 milage.sort()
 now_milage = 0
 for i in range(N):
