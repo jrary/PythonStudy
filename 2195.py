@@ -10,19 +10,23 @@ copy = [[] for _ in range(len(S)+1)]
 for i in range(len(S)):
     for j in range(i+1, len(S)+1):
         copy[j-i].append(S[i:j])
-
-def frag(p):
-    print("hi")
-
 res = 0
-if len(S) < len(P):
-    for i in range(len(P)):
-        for j in range(i, len(P)):
-            P_split.append(P[i:j])
-else:
-    P_split = P
+def frag(p):
+    global res
+    if len(p) <= 1:
+        res += 1
+        #print(p)
+        return
+    for i in range(len(S), 1, -1):
+        for key in copy[i]:
+            if key in p:
+                idx = p.find(key)
+                #print(key,":", p, "->", p[:idx], "+", p[idx+i:])
+                res += 1
+                frag(p[:idx])
+                frag(p[idx+i:])
+                return          
 
-print(P_split)
-
-
+frag(P)
+# print(copy)
 print(res)
