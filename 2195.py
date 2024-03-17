@@ -2,7 +2,6 @@ import sys
 
 S = sys.stdin.readline().strip()
 P = sys.stdin.readline().strip()
-P_split = []
 
 # copy 함수를 통한 결과물을 모두 미리 가져온다
 # S를 split하여 copy 함수 안에 문자열의 길이별로 저장한다
